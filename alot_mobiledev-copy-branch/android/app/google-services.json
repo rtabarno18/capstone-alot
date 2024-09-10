@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481862748682",
+    "project_id": "alot-c1f1b",
+    "storage_bucket": "alot-c1f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481862748682:android:093e055c3612468cbeedf3",
+        "android_client_info": {
+          "package_name": "com.example.alot_mobiledevelopment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2A9JgzQqfW1ub6th4AEEcA2eGq_ZMec8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
