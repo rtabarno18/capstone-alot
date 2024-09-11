@@ -70,14 +70,14 @@ class BookingRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.BookingsTabScreen]
-class BookingsTab extends _i14.PageRouteInfo<void> {
-  const BookingsTab({List<_i14.PageRouteInfo>? children})
+class BookingsTabScreenRoute extends _i14.PageRouteInfo<void> {
+  const BookingsTabScreenRoute({List<_i14.PageRouteInfo>? children})
       : super(
-          BookingsTab.name,
+          BookingsTabScreenRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'BookingsTab';
+  static const String name = 'BookingsTabScreenRoute';
 
   static _i14.PageInfo page = _i14.PageInfo(
     name,
@@ -108,14 +108,14 @@ class ChatRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.ChatsTabScreen]
-class ChatsTab extends _i14.PageRouteInfo<void> {
-  const ChatsTab({List<_i14.PageRouteInfo>? children})
+class ChatsTabScreenRoute extends _i14.PageRouteInfo<void> {
+  const ChatsTabScreenRoute({List<_i14.PageRouteInfo>? children})
       : super(
-          ChatsTab.name,
+          ChatsTabScreenRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'ChatsTab';
+  static const String name = 'ChatsTabScreenRoute';
 
   static _i14.PageInfo page = _i14.PageInfo(
     name,
@@ -237,14 +237,14 @@ class EnterLocationRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.HomeTabScreen]
-class HomeTab extends _i14.PageRouteInfo<void> {
-  const HomeTab({List<_i14.PageRouteInfo>? children})
+class HomeTabScreenRoute extends _i14.PageRouteInfo<void> {
+  const HomeTabScreenRoute({List<_i14.PageRouteInfo>? children})
       : super(
-          HomeTab.name,
+          HomeTabScreenRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'HomeTab';
+  static const String name = 'HomeTabScreenRoute';
 
   static _i14.PageInfo page = _i14.PageInfo(
     name,
@@ -321,14 +321,14 @@ class MapRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.MapsTabScreen]
-class MapsTab extends _i14.PageRouteInfo<void> {
-  const MapsTab({List<_i14.PageRouteInfo>? children})
+class MapsTabScreenRoute extends _i14.PageRouteInfo<void> {
+  const MapsTabScreenRoute({List<_i14.PageRouteInfo>? children})
       : super(
-          MapsTab.name,
+          MapsTabScreenRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'MapsTab';
+  static const String name = 'MapsTabScreenRoute';
 
   static _i14.PageInfo page = _i14.PageInfo(
     name,
@@ -359,14 +359,14 @@ class ProfileRoute extends _i14.PageRouteInfo<void> {
 
 /// generated route for
 /// [_i3.ProfileTabScreen]
-class ProfileTab extends _i14.PageRouteInfo<void> {
-  const ProfileTab({List<_i14.PageRouteInfo>? children})
+class ProfileTabScreenRoute extends _i14.PageRouteInfo<void> {
+  const ProfileTabScreenRoute({List<_i14.PageRouteInfo>? children})
       : super(
-          ProfileTab.name,
+          ProfileTabScreenRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'ProfileTab';
+  static const String name = 'ProfileTabScreenRoute';
 
   static _i14.PageInfo page = _i14.PageInfo(
     name,

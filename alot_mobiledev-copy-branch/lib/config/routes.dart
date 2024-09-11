@@ -20,6 +20,15 @@ class AppRouter extends RootStackRouter {
         AutoRoute(page: EnterLocationRoute.page),
         AutoRoute(page: MapRoute.page),
         AutoRoute(page: LocationAccessRoute.page),
+        AutoRoute(page: DashboardRoute.page, children: [
+          AutoRoute(page: HomeTabScreenRoute.page, children: [
+            AutoRoute(page: ClientHomeRoute.page, initial: true),
+          ]),
+          AutoRoute(page: MapsTabScreenRoute.page),
+          AutoRoute(page: BookingsTabScreenRoute.page),
+          AutoRoute(page: ChatsTabScreenRoute.page),
+          AutoRoute(page: ProfileTabScreenRoute.page),
+        ]),
       ];
 
   @override
