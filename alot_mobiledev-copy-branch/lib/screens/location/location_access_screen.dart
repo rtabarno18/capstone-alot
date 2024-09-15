@@ -67,9 +67,13 @@ class LocationAccessScreen extends StatelessWidget {
 
       // Navigate to the appropriate home screen based on the role
       if (role == 'client') {
-        context.router.replaceAll([const ClientHomeRoute()]);
+        context.router.replaceAll([
+          const DashboardRoute(children: [ClientHomeRoute()])
+        ]);
       } else if (role == 'barber') {
-        context.router.replaceAll([const BarberHomeRoute()]);
+        context.router.replaceAll([
+          const DashboardRoute(children: [BarberHomeRoute()])
+        ]);
       }
     } else if (status.isDenied) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -139,7 +143,6 @@ class LocationAccessScreen extends StatelessWidget {
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.purple, // Background color
                           padding: const EdgeInsets.symmetric(
-                            vertical: 15.0,
                             horizontal: 50.0,
                           ),
                           shape: RoundedRectangleBorder(
