@@ -21,12 +21,13 @@ class _DashboardView extends StatefulWidget {
 }
 
 class _DashboardViewState extends State<_DashboardView> {
+  // Define the routes for the bottom navigation tabs.
   final _routes = <PageRouteInfo>[
-    const HomeTabScreenRoute(),
-    const MapsTabScreenRoute(),
-    const BookingsTabScreenRoute(),
-    const ChatsTabScreenRoute(),
-    const ProfileTabScreenRoute(),
+    const HomeTabScreenRoute(), // Home screen
+    const MapsTabScreenRoute(), // Maps screen
+    const BookingsTabScreenRoute(), // Bookings screen
+    const ChatsTabScreenRoute(), // Chats screen
+    const ProfileTabScreenRoute(), // Profile screen
   ];
 
   @override
@@ -42,23 +43,24 @@ class _DashboardViewState extends State<_DashboardView> {
       builder: (BuildContext context, Widget child) {
         final TabsRouter tabsRouter = AutoTabsRouter.of(context);
         return Scaffold(
-          body: child,
+          body: child, // Displays the active tab screen
           bottomNavigationBar: AnimatedBottomNavigationBar.builder(
-            itemCount: _routes.length,
+            itemCount: _routes.length, // Number of tabs
             tabBuilder: (int index, bool isActive) {
               return Icon(
-                _getBottomNavigationIcons(index),
+                _getBottomNavigationIcons(index), // Get the appropriate icon
                 size: 24,
-                color:
-                    tabsRouter.activeIndex == index ? Colors.blue : Colors.grey,
+                color: tabsRouter.activeIndex == index
+                    ? Colors.blue // Active tab color
+                    : Colors.grey, // Inactive tab color
               );
             },
-            activeIndex: tabsRouter.activeIndex,
+            activeIndex: tabsRouter.activeIndex, // Active tab index
             gapLocation: GapLocation.none,
             notchSmoothness: NotchSmoothness.defaultEdge,
             splashSpeedInMilliseconds: 200,
             onTap: (index) {
-              tabsRouter.setActiveIndex(index);
+              tabsRouter.setActiveIndex(index); // Navigate to the tapped tab
             },
           ),
         );
@@ -66,6 +68,7 @@ class _DashboardViewState extends State<_DashboardView> {
     );
   }
 
+  // Method to get the icons for the bottom navigation tabs.
   IconData _getBottomNavigationIcons(int index) {
     switch (index) {
       case 0:

@@ -27,10 +27,18 @@ class AppRouter extends RootStackRouter {
             AutoRoute(page: ClientHomeRoute.page, initial: true),
             AutoRoute(page: BarberHomeRoute.page),
           ]),
-          AutoRoute(page: MapsTabScreenRoute.page),
-          AutoRoute(page: BookingsTabScreenRoute.page),
-          AutoRoute(page: ChatsTabScreenRoute.page),
-          AutoRoute(page: ProfileTabScreenRoute.page),
+          AutoRoute(page: MapsTabScreenRoute.page, children: [
+            AutoRoute(page: MapRoute.page, initial: true),
+          ]),
+          AutoRoute(page: BookingsTabScreenRoute.page, children: [
+            AutoRoute(page: BookingRoute.page, initial: true),
+          ]),
+          AutoRoute(page: ChatsTabScreenRoute.page, children: [
+            AutoRoute(page: ChatRoute.page, initial: true),
+          ]),
+          AutoRoute(page: ProfileTabScreenRoute.page, children: [
+            AutoRoute(page: ProfileRoute.page, initial: true),
+          ]),
         ]),
       ];
 
