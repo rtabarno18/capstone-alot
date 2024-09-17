@@ -145,12 +145,9 @@ class LocationAccessScreen extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                             horizontal: 50.0,
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
                         ),
                         child: const Text(
-                          'Allow Location Access',
+                          "Allow Location Access",
                           style: TextStyle(fontSize: 17, color: Colors.white),
                         ),
                       ),
